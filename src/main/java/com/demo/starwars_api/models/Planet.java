@@ -139,7 +139,6 @@ public class Planet {
     }
 
 
-    // You can also add constructors, toString() method etc. for better usability
     @Override
     public String toString() {
         return "Planet{" +

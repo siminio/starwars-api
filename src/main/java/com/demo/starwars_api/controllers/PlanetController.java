@@ -17,7 +17,7 @@ public class PlanetController {
     PlanetRepository planetRepository;
 
     @GetMapping("/planets")
-    List<Planet> test() {
+    List<Planet> getAllPlanets() {
         return planetRepository.findAllPlanets();
     }
 
@@ -27,7 +27,7 @@ public class PlanetController {
     }
 
     @GetMapping("/planets/search/{searchTerm}")
-    List<Planet> testSearch(@PathVariable String searchTerm) {
+    List<Planet> getPlanetBySearch(@PathVariable String searchTerm) {
         return planetRepository.findPlanetsBySearch(searchTerm);
     }
     
